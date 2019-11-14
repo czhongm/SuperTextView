@@ -1,7 +1,7 @@
 package com.allen.library;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatTextView;
+import androidx.appcompat.widget.AppCompatTextView;
 import android.text.InputFilter;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -118,6 +118,8 @@ public class BaseTextView extends LinearLayout {
         textView.setText(textString);
         if (!TextUtils.isEmpty(textString)) {
             textView.setVisibility(VISIBLE);
+        }else{
+            textView.setVisibility(GONE);
         }
     }
 
