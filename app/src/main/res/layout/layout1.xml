@@ -28,13 +28,25 @@
                 android:layout_height="50dp"
                 stv:sLeftTextString="通知设置"
                 stv:sRightIconRes="@drawable/arrow_right_red" />
+
+            <TextView
+                android:text="@string/app_name"
+                android:enabled="false"
+                android:textColor="@color/selector_stv_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
             <com.allen.library.SuperTextView
+                android:id="@+id/account"
                 android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:enabled="false"
+                stv:sLeftTextColor="@color/selector_stv_text_color"
+                stv:sRightTextColor="@color/selector_stv_text_color"
                 stv:sLeftTextString="账号与安全"
-                stv:sRightTextString="已保护"
                 stv:sRightIconRes="@drawable/arrow_right_red"
-                stv:sRightTvDrawableLeft="@drawable/v1"
-                android:layout_height="50dp" />
+                stv:sRightTextString="已保护"
+                stv:sRightTvDrawableLeft="@drawable/v1" />
 
             <com.allen.library.SuperTextView
                 android:layout_width="match_parent"

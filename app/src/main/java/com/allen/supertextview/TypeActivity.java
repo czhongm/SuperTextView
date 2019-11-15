@@ -39,6 +39,7 @@ public class TypeActivity extends AppCompatActivity {
                 break;
             case 1:
                 setContentView(R.layout.layout1);
+                findViewById(R.id.account).setEnabled(false);
                 break;
             case 2:
                 setContentView(R.layout.layout2);
